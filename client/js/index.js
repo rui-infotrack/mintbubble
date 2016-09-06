@@ -1,3 +1,5 @@
+import 'components/base.styl';
+
 // polyfills
 require('es6-promise').polyfill(); // for fetch API in IE 9
 
