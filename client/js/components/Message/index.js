@@ -31,7 +31,7 @@ class Message extends Component {
 
 Message.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.children,
+  children: PropTypes.any,
   role: PropTypes.role
 };
 
