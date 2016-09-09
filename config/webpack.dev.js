@@ -35,11 +35,11 @@ module.exports = webpackMerge.smart(commonConfig, {
   devServer: {
     contentBase: helpers.root('client'),
     hot: true,
-    // proxy: {
-    //   '/api/*': 'http://localhost:5000',
-    //   '/images/*': 'http://localhost:5000',
-    //   '/realtime/*': 'http://localhost:5000',
-    //   '/signalr/*': 'http://localhost:5000'
-    // }
+    proxy: {
+      '/api/*': 'http://localhost:5000',
+      // '/images/*': 'http://localhost:5000',
+      // '/realtime/*': 'http://localhost:5000',
+      // '/signalr/*': 'http://localhost:5000'
+    }
   }
 });

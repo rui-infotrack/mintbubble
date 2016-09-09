@@ -1,0 +1,38 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "role": "authority",
+      "title": "Requested accepted",
+      "content": "Wait, yes, you wait!"
+    },
+
+    {
+      "id": 2,
+      "role": "client",
+      "title": "How long",
+      "content": "So how long do I have to wait?"
+    },
+
+    {
+      "id": 3,
+      "role": "client",
+      "title": "Reply please",
+      "content": "Can you please reply my message?"
+    },
+
+    {
+      "id": 4,
+      "role": "authority",
+      "title": "Your document arrived",
+      "content": "This is your document, please enjoy"
+    },
+
+    {
+      "id": 5,
+      "role": "client",
+      "title": "Okay, thanks",
+      "content": "Whatever"
+    }
+  ]
+}
