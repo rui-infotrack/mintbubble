@@ -1,4 +1,4 @@
-import 'components/base.styl';
+import './base.styl';
 
 // polyfills
 require('es6-promise').polyfill(); // for fetch API in IE 9
@@ -8,7 +8,7 @@ require('isomorphic-fetch');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'components/App';
+import App from './App';
 
 window.onload = () => {
   const root = document.createElement('div');

@@ -18,7 +18,7 @@ var assetsLoaders = [
 
 module.exports = {
   entry: {
-    app: helpers.root('client', 'js', 'index.js'),
+    app: helpers.root('client', 'index.js'),
     vendor: [
       'react',
       'react-dom',
@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.(js|jsx)$/,
-        include: helpers.root('client', 'js'),
+        include: helpers.root('client'),
         loaders: [
           'babel-loader'
         ]
@@ -52,19 +52,25 @@ module.exports = {
     preLoaders: [
       {
         test: /\.(js|jsx)$/,
-        include: helpers.root('client', 'js'),
+        include: helpers.root('client'),
         loader: 'eslint-loader'
       }
     ]
   },
   resolve: {
     alias: {
-      actions: helpers.root('client', 'js', 'actions'),
-      components: helpers.root('client', 'js', 'components'),
-      ui: helpers.root('client', 'js', 'components', 'UI'),
-      network: helpers.root('client', 'js', 'network'),
-      stores: helpers.root('client', 'js', 'stores'),
-      utils: helpers.root('client', 'js', 'utils')
+      actions: helpers.root('client', 'actions'),
+      api: helpers.root('client', 'api'),
+      components: helpers.root('client', 'components'),
+      constants: helpers.root('client', 'constants'),
+      containers: helpers.root('client', 'containers'),
+      layouts: helpers.root('client', 'layouts'),
+      network: helpers.root('client', 'network'),
+      reducers: helpers.root('client', 'reducers'),
+      routes: helpers.root('client', 'routes'),
+      store: helpers.root('client', 'store'),
+      ui: helpers.root('client', 'components', 'ui'),
+      utils: helpers.root('client', 'utils')
     },
   },
   plugins: [

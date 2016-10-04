@@ -14,7 +14,7 @@ module.exports = webpackMerge.smart(commonConfig, {
     loaders: [
       {
         test: /\.(js|jsx)$/,
-        include: helpers.root('client', 'js'),
+        include: helpers.root('client'),
         loaders: [
           'react-hot',
           'babel-loader'
